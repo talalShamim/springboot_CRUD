@@ -1,0 +1,26 @@
+<header th:fragment="header">
+  <nav class="navbar navbar-expand-md navbar-dark" style="background: linear-gradient(45deg, #343a40, #007bff);">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" th:href="@{/students/all}" style="color: #f8f9fa; font-size: 1.5rem;">
+        <i class="fas fa-graduation-cap"></i> Student Management System
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="topNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" th:href="@{/students/all}" style="margin-right: 1rem;">
+              <i class="fas fa-users"></i> Students
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white font-weight-bold" th:href="@{/students/new}">
+              <i class="fas fa-user-plus"></i> Add Student
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
